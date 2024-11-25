@@ -4,6 +4,7 @@ Imagen docker con todas las herramientas que vamos a necesitar para la práctica
 Abrimos la terminal de nuestro equipo y nos situamos en la carpeta docker.
  1º Ejecutamos el build de la imágen
  ```
+ export DOCKER_DEFAULT_PLATFORM=linux/amd64 (MAC Users)
  docker build -t tools:latest .
  ```
 2º Subimos un nivel en la terminal para situarnos en el directorio root del repo
