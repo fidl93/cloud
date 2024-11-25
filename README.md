@@ -15,6 +15,7 @@ Incluye:
 Añadir sobre el ejercicio anterior
 * Vnet
 * 2 Subnets
+* NSG
 
 ## Práctica 3
 Levantar infra mas completa utilizando solo terraform. Incluye
