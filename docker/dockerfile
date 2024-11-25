@@ -1,0 +1,33 @@
+#Ansible | Az-cli | Terraform | virtualenv | python3 | Kubectl | Helm
+
+#TOOLS
+ARG TERRAFORM_VERSION="1.7.0"
+ARG AZ_VERSION="2.57.0"
+
+#CONTAINER
+ARG PYTHON_VERSION="3.11"
+ARG DEBIAN_DIST=bullseye
+
+#Terraform & az_cli
+FROM debian:${DEBIAN_DIST}-slim AS temporal_image
+
+ARG TERRAFORM_VERSION
+RUN apt update && \
+    apt install -y unzip wget vim && \
+    wget -O terraform.zip https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
+    unzip terraform.zip && \
+    mv terraform /usr/local/bin/terraform
+
+ARG AZ_VERSION
+ARG DEBIAN_DIST
+RUN apt install -y --no-install-recommends ca-certificates curl apt-transport-https gnupg && \
+    curl -sL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null && \
+    echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ ${DEBIAN_DIST} main" | tee /etc/apt/sources.list.d/azure-cli.list && \
+    apt update && \
+    apt install -y azure-cli=${AZ_VERSION}-1~${DEBIAN_DIST} && \
+    apt clean && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /code
+
+ENTRYPOINT [ "/bin/bash" ]
