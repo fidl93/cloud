@@ -11,9 +11,12 @@ Incluye:
 * RG
 * Storage
 
-
-
 ## Práctica 2
+Añadir sobre el ejercicio anterior
+* Vnet
+* 2 Subnets
+
+## Práctica 3
 Levantar infra mas completa utilizando solo terraform. Incluye
 * VNET
 * SQL
