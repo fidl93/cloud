@@ -18,8 +18,12 @@ Añadir sobre el ejercicio anterior
 * NSG
 
 ## Práctica 3
+Implementar lo mismos que la práctica 2, pero aplicando modulos y variables.
+
+## Práctica 4
 Levantar infra mas completa utilizando solo terraform. Incluye
-* VNET
+* RG
+* Storage
 * SQL
 * DATABRICKS
 * Notebook spark
