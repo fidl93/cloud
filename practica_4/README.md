@@ -1,4 +1,6 @@
 En esta práctica vamos a desplegar la siguiente infraestructura
+
+
 ![infra](../docs/practica_4.png)
 
 Vamos a desplegar un Stogare account y una Base de datos SQL.
