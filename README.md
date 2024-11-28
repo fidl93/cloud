@@ -34,3 +34,5 @@ Sobre lo anterior, vamos a levantar una api a la que podemos mandar los datos de
 Vamos a utilizar el recurso de Azure Container Instance para lanzar el contenedor.
 
 * Container Instance
+
+En la carpeta test_api se encuentra el dockerfile para crear el contenedor con la api.
