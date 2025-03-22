@@ -1,0 +1,28 @@
+#Ansible | Az-cli | Terraform | virtualenv | python3 | Kubectl | Helm
+
+#TOOLS
+ARG TERRAFORM_VERSION="1.7.0"
+ARG AWS_VERSION="2.57.0"
+
+#CONTAINER
+ARG PYTHON_VERSION="3.11"
+ARG DEBIAN_DIST=bullseye
+
+#Terraform & aws_cli
+FROM debian:${DEBIAN_DIST}-slim
+
+ARG TERRAFORM_VERSION
+RUN apt update && \
+    apt install -y unzip wget vim curl less mandoc && \
+    wget -O terraform.zip https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
+    unzip terraform.zip && \
+    mv terraform /usr/local/bin/terraform
+
+ARG AWS_VERSION
+ARG DEBIAN_DIST
+RUN cd /tmp && curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
+    unzip awscliv2.zip && ./aws/install
+
+WORKDIR /code
+
+ENTRYPOINT [ "/bin/bash" ]
