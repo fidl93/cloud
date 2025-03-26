@@ -1,7 +1,5 @@
 # Terraform code
 
-![infra](../docs/practica_2_1.png)
-
 ![infra](../docs/practica_2_2.png)
 
 * Virtual Network:
@@ -28,32 +26,8 @@ terraform apply plan.out
 Echar un ojo al tfstate.
 
 
-Para destruir lo que hemos construido
+# Terraform apply target
 ```
-terraform destroy
-```
-Revisamos las listas en address_spaces y los tags.
-
-## Comandos Terraform
-
-### Apply específico
-```
-terraform apply -target xxxx
-terraform apply -target xxxx -target xxxx
-```
-### State
-```
-terraform state list
-terraform state show aws_vpc.vpc
-```
-### Import
-```
-terraform import xxxxx AWS_ID
-```
-### Graph
-```
-terraform graph
-
-http://webgraphviz.com/
-https://spacelift.io/blog/terraform-graph
+terraform apply -target module.subnet1
+Depedencias --> s(Si no tiene la VPC creada, la creara)
 ```

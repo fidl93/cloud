@@ -19,3 +19,9 @@ Sobre el ejercicio anterior, vamos a añadir:
 * Route Table
 * Internet GW
 * Security group
+
+Comandos AWS de interes
+
+
+## Práctica 3
+Implementar lo mismos que la práctica 2, pero aplicando modulos y variables.
