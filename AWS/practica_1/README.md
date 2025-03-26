@@ -101,8 +101,7 @@ Aplicamos el plan que hemos visto previamente
 terraform apply plan.out
 ```
 
-***Echar un ojo al tfstate**
-
+***Echar un ojo al tfstate (Local o Remoto)**
 
 Para destruir lo que hemos construido
 ```
