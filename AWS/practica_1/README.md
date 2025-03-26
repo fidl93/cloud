@@ -86,7 +86,7 @@ export AWS_SECRET_ACCESS_KEY=AWS_SECRET_ACCESS_KEY
 export AWS_DEFAULT_REGION=eu-west-1
 ```
 A la altura del fichero main.tf
-Descarta de dependencias y plugins
+Descarga de dependencias y plugins
 ```
 terraform init
 ```

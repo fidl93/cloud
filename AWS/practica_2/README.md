@@ -12,7 +12,7 @@
   * Espacios de direcciones: 10.0.2.0/24
 
 A la altura del fichero main.tf
-Descarta de dependencias y plugins
+Descarga de dependencias y plugins
 ```
 terraform init
 ```
