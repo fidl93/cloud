@@ -66,6 +66,12 @@ module "private_route_table"{
     tags = var.route_table_tags
 }
 #Tambien podemos seguir incluyendo rescursos sin ser modulos
+resource "aws_route_table_association" "second_subnet_association" {
+  depends_on = [ module.private_route_table ] # No Obligatorio
+  subnet_id      = module.subnet2.id
+  route_table_id = module.private_route_table.id
+}
+
 resource "aws_route_table_association" "third_subnet_association" {
   depends_on = [ module.private_route_table ] # No Obligatorio
   subnet_id      = module.subnet3.id
