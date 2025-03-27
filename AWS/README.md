@@ -1,9 +1,9 @@
 # AWS - IaC
 
-# Docker
+## Docker
 Ejecuta la imagen que encontraras en la carpeta docker
 
-# Práctica 1
+## Práctica 1
 Levantar el mismo componente de AWS utilizando:
 * AWS Cli
 * AWS cloudformation
@@ -12,7 +12,7 @@ Levantar el mismo componente de AWS utilizando:
 Incluye:
 * Creación de S3 Storage
 
-# Práctica 2
+## Práctica 2
 Sobre el ejercicio anterior, vamos a añadir:
 * Vpc
 * Subnet
@@ -25,3 +25,9 @@ Comandos AWS de interes
 
 ## Práctica 3
 Implementar lo mismos que la práctica 2, pero aplicando modulos y variables.
+
+
+## Práctica 4
+Partiendo del sistema de redes de la práctica anterior. Vamos a montar a mayores
+* EC2 (Virtual Machine)
+* RDS (Database)
