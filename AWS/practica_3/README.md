@@ -1,6 +1,6 @@
 # Terraform code
 
-![infra](../docs/practica_2_2.png)
+![infra](../docs/practica_3.png)
 
 * Virtual Network:
   * Espacio de direcciones: 10.0.0.0/16
