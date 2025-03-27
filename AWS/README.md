@@ -24,7 +24,7 @@ Comandos AWS de interes
 
 
 ## Práctica 3
-Implementar lo mismos que la práctica 2, pero aplicando modulos y variables.
+Implementar lo mismos que la práctica 2, pero aplicando modulos y variables. Pequeño cambio en las private_subnets
 
 
 ## Práctica 4
