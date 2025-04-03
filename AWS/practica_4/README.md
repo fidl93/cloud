@@ -35,13 +35,6 @@ terraform apply plan.out
 ```
 Echar un ojo al tfstate.
 
-## Instalación cliente mysql para conectar a RDS
-Una vez conectado a la EC2
-```
-sudo dnf update
-sudo dnf install mariadb105
-```
-
 ## Conexión RDS (desde máquina EC2)
 ```
 mysql -h xxxxxxxxx.eu-west-1.rds.amazonaws.com -u xxxxxx -p
