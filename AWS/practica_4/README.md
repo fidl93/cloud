@@ -1,5 +1,4 @@
 # Terraform code
-***Implementar la siguiente arquitectura***
 
 ![infra](../docs/practica_4.png)
 
@@ -13,6 +12,14 @@
   * Espacios de direcciones: 10.0.2.0/24
   * Espacios de direcciones: 10.0.2.0/24
 
+## Creación de clave publico/privada para autenticar en EC2 (AWS-CLI)
+> Reference: https://github.com/rodvic/cloud-django/blob/master/aws/README.md#create-a-key-pair
+
+```
+aws ec2 create-key-pair --key-name proupsa-ec2-key-pair --query 'KeyMaterial' --output text > proupsa-ec2-key-pair.pem
+```
+
+## Terraform
 A la altura del fichero main.tf
 Descarga de dependencias y plugins
 ```
@@ -28,21 +35,14 @@ terraform apply plan.out
 ```
 Echar un ojo al tfstate.
 
-## Creación de clave publico/privada para autenticar en EC2 (AWS-CLI)
-> Reference: https://github.com/rodvic/cloud-django/blob/master/aws/README.md#create-a-key-pair
-
-```
-aws ec2 create-key-pair --key-name proupsa-ec2-key-pair --query 'KeyMaterial' --output text > proupsa-ec2-key-pair.pem
-```
-
 ## Instalación cliente mysql para conectar a RDS
 Una vez conectado a la EC2
 ```
-sudo yum update
+sudo dnf update
 sudo dnf install mariadb105
 ```
 
-## Conexión RDS
+## Conexión RDS (desde máquina EC2)
 ```
 mysql -h xxxxxxxxx.eu-west-1.rds.amazonaws.com -u xxxxxx -p
 ```

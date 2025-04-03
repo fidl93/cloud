@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="63XFqaJNnCOzj1Tr916l" name="Page-1">
-        <mxGraphModel dx="703" dy="586" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1672" dy="597" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -83,19 +83,19 @@
                     <mxGeometry x="481.5" y="446" width="123" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="34" value="Amazon EC2" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.ec2;" parent="1" vertex="1">
-                    <mxGeometry x="677" y="215" width="80" height="100" as="geometry"/>
+                    <mxGeometry x="334" y="210.5" width="80" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="35" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.rds_instance;" parent="1" vertex="1">
                     <mxGeometry x="683" y="451" width="78" height="78" as="geometry"/>
                 </mxCell>
                 <mxCell id="36" value="" style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#4495D1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.2d.private_key;" parent="1" vertex="1">
-                    <mxGeometry x="733" y="193" width="55.6" height="50.8" as="geometry"/>
+                    <mxGeometry x="390" y="188.5" width="55.6" height="50.8" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" value="" style="fillColor=#3F51B5;aspect=fixed;sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;outlineConnect=0;verticalAlign=top;align=center;shape=mxgraph.openstack.neutron_securitygroup;" vertex="1" parent="1">
-                    <mxGeometry x="615" y="300" width="50" height="50" as="geometry"/>
+                <mxCell id="37" value="" style="fillColor=#3F51B5;aspect=fixed;sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;outlineConnect=0;verticalAlign=top;align=center;shape=mxgraph.openstack.neutron_securitygroup;" parent="1" vertex="1">
+                    <mxGeometry x="272" y="295.5" width="50" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="Security Group" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="663" y="316" width="98" height="26" as="geometry"/>
+                <mxCell id="38" value="Security Group" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="311.5" width="98" height="26" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
