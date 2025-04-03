@@ -22,12 +22,17 @@ Sobre el ejercicio anterior, vamos a añadir:
 
 Comandos AWS de interes
 
-
 ## Práctica 3
-Implementar lo mismos que la práctica 2, pero aplicando modulos y variables. Pequeño cambio en las private_subnets
+Implementar lo mismos que la práctica 2, pero aplicando modulos y variables.
 
 
 ## Práctica 4
 Partiendo del sistema de redes de la práctica anterior. Vamos a montar a mayores
 * EC2 (Virtual Machine)
 * RDS (Database)
+
+## Práctica 5
+Partiendo del ejemplo anterior
+* Montamos un s3
+
+Sobre la EC2 vamos a desplegar un servicio de Jupyter Lab usando python. Vamos a ejecutar un algoritmo en pyspark que obtiene datos del s3 y de la RDS DB para hacer un join por un campo comun en spark.
