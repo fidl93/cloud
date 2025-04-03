@@ -36,3 +36,7 @@ Partiendo del ejemplo anterior
 * Montamos un s3
 
 Sobre la EC2 vamos a desplegar un servicio de Jupyter Lab usando python. Vamos a ejecutar un algoritmo en pyspark que obtiene datos del s3 y de la RDS DB para hacer un join por un campo comun en spark.
+
+## Práctica Lambda Function
+Desplegar na lambda function que se conecta a un s3. Esta función espera recibir eventos en un endpoint. Estos eventos son una POST request con un fichero CSV en base 64.
+El fichero que reciben lo almacenan en el bucket asignado.
