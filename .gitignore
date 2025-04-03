@@ -19,3 +19,4 @@ terraform.rc
 *.terraform.lock.hcl
 *plan.out
 *.pem
+.DS_Store
