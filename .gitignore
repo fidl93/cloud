@@ -20,3 +20,4 @@ terraform.rc
 *plan.out
 *.pem
 .DS_Store
+*.ipynb_checkpoints
