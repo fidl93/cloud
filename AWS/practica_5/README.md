@@ -17,7 +17,7 @@ Nos conectaremos mediante el puerto 8888 al jupyterlab para poder ejecutar dos n
 ## Algorithm
 Algoritmo en pyspark que se conecta a la base de datos para recuperar el dataset1, tambien conecta con el s3 para obtener el dataset2 y realiza una operacion de join por campos comunes para generar un único dataset conjunto.
 
-## Subir datos a bucket
+## Subir datos a bucket (tambien se puede conectar con práctica_lambda_function)
 Tras aplicar el terraform para crear el bucket de datos
 ```
 aws s3 cp files_notebooks/dataset2.csv s3://XXXXXXX-bucket/
