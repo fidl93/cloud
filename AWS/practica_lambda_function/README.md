@@ -36,6 +36,8 @@ Vamos a realizar desde el portal, también se puede hacer con terraform
 
 5. Lanzar un fichero desde local
 ```
-cat dataset2.csv | base64 | curl -X POST URL_LAMBDA_FUNCTION \
+export LAMBDA_URL=https://XXXXXXX
+cat dataset2.csv | base64 | curl -X POST  ${LAMBDA_URL}\
      -H "Content-Type: text/plain" --data @-
+
 ```
