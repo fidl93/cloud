@@ -115,6 +115,8 @@ resource "aws_vpc_security_group_egress_rule" "allow_all_traffic_ipv4" {
   ip_protocol       = "-1" # semantically equivalent to all ports
 }
 
+#Crear máquina EC2 - Crear previamente el key pair en la consola de AWS
+#Ver metricas en portal
 module "virtual_machine" {
     source = "./modules/EC2"
     ami = var.ami
