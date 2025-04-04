@@ -79,7 +79,6 @@ resource "aws_route_table_association" "third_subnet_association" {
 }
 
 #Requerido por el módulo de RDS DB_SUBNET_GROUP
-
 resource "aws_db_subnet_group" "db_subnet_group" {
     name       = "db_subnet_group"
     subnet_ids = [module.subnet2.id, module.subnet3.id]
@@ -94,6 +93,7 @@ module "mysql_database" {
     db_subnet_group_name = aws_db_subnet_group.db_subnet_group.name
 }
 
+#Creación de Security Group para internet
 module "internet_security_group" {
     source = "./modules/security_group"
     name = var.internet_sg_name
