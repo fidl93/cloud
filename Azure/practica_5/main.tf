@@ -18,27 +18,27 @@ module "resource_group" {
     location = var.location
 }
 
-module "storage_account" {
-    source              = "./modules/storage_account"
-    name                = "${var.label}sa"
-    location            = var.location
-    resource_group_name = module.resource_group.name
-}
+# module "storage_account" {
+#     source              = "./modules/storage_account"
+#     name                = "${var.label}sa"
+#     location            = var.location
+#     resource_group_name = module.resource_group.name
+# }
 
-module "mysql" {
-    source              = "./modules/sql"
-    name                = "${var.label}sqldb"
-    resource_group_name = module.resource_group.name
-}
+# module "mysql" {
+#     source              = "./modules/sql"
+#     name                = "${var.label}sqldb"
+#     resource_group_name = module.resource_group.name
+# }
 
-module "databricks_workspace" {
-    source              = "./modules/databricks"
-    name                = "${var.label}dbw"
-    location            = var.location
-    resource_group_name = module.resource_group.name
-    tags                = var.tags
+# module "databricks_workspace" {
+#     source              = "./modules/databricks"
+#     name                = "${var.label}dbw"
+#     location            = var.location
+#     resource_group_name = module.resource_group.name
+#     tags                = var.tags
 
-}
+# }
 
 module "container_instance" {
     source = "./modules/container_instance"
