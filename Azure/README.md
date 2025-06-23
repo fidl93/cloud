@@ -29,6 +29,15 @@ Levantar infra mas completa utilizando solo terraform. Incluye
 * DATABRICKS
 * Notebook spark
 
+## Práctica 4.1
+Levantar infra mas completa utilizando solo terraform. Incluye
+* RG
+* Storage
+* SQL
+* VM - Jupyter Notebook
+* Notebook spark
+
+
 ## Práctica 5
 Sobre lo anterior, vamos a levantar una api a la que podemos mandar los datos desde databricks.
 Vamos a utilizar el recurso de Azure Container Instance para lanzar el contenedor.
