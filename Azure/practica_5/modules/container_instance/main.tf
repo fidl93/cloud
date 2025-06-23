@@ -7,9 +7,9 @@ resource "azurerm_container_group" "container" {
   restart_policy      = var.restart_policy
 
   image_registry_credential {
-    username = "testing-git"
+    username = "adsfasd"
     password = var.registry_pass
-    server = "fidltest2811.azurecr.io"
+    server = "testcr23062025.azurecr.io"
   }
 
   container {

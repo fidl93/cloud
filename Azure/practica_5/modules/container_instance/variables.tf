@@ -22,11 +22,11 @@ variable "restart_policy" {
 variable "image" {
     type = string
     description = "Image to load"
-    default = "fidltest2811.azurecr.io/api_python:1.0.0"
+    default = "testcr23062025.azurecr.io/api_python:1.0.0"
 }
 
 variable "registry_pass" {
     type = string
     description = "Pass to auth against registry"
-    default = "w4WEusP9ceN3Qg8kMBMyDv06vt9FOA0wDzeBtRisxw+ACRDF1/6e"
+    default = "XXXXXXXXXXXXXX"
 }

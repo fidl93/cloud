@@ -31,34 +31,19 @@ Revisamos nuevos RG creados.
 
 Cambios que tenemos que hacer en el notebook de Algorithm.
 
-1. Tenemos que transformar el Dataframe a JSON.
-
-```
-# Convertir a JSON
-json_data = df.toJSON().collect()
-
-# Imprimir el JSON resultante
-print(json_data)
-
-```
-
-2. Tenemos que instalar, con pip, la libreria de requests.
-```
-%pip install requests
-```
-
-3. Añadimos el código para hacer el envio a la api, hay que cambiar la URL para que apunte a nuestra api.
+1. Añadimos el código para hacer el envio a la api, hay que cambiar la URL para que apunte a nuestra api.
 ```
 import requests
 import json
 
 # Convertir el DataFrame de PySpark a una lista de listas (encabezados + datos)
-columns = df.columns
-data = [row.asDict() for row in df.collect()]
+columns = joined_data.columns
+data = [row.asDict() for row in joined_data.collect()]
 tabla = [columns] + data
+print(tabla)
 
 # URL de la API
-url = "http://localhost:5000/api/tabla"
+url = "http://PUBLIC_IP_CONTAINER:5000/api/tabla"
 
 # Enviar la solicitud POST con el DataFrame convertido a JSON
 response = requests.post(url, json=tabla)
@@ -69,4 +54,4 @@ print(response.text)
 
 ```
 
-4. Si todo fue bien, podemos ver en el log del contenedor los datos enviamos.
+2. Si todo fue bien, podemos ver en el log del contenedor los datos enviamos.
