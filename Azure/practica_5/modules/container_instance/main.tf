@@ -6,11 +6,11 @@ resource "azurerm_container_group" "container" {
   os_type             = "Linux"
   restart_policy      = var.restart_policy
 
-  image_registry_credential {
-    username = "adsfasd"
-    password = var.registry_pass
-    server = "testcr23062025.azurecr.io"
-  }
+  # image_registry_credential {
+  #   username = "adsfasd"
+  #   password = var.registry_pass
+  #   server = "testcr23062025.azurecr.io"
+  # }
 
   container {
     name   = "testingapi"
