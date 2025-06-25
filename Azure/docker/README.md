@@ -13,5 +13,6 @@ cd ..
 ```
 3º Ejecutamos el siguiente comando para acceder al contenedor
 ```
-docker run --rm -v $(pwd):/code -it  tools:latest
+(MAC/LINUX) --> docker run --rm -v $(pwd):/code -it  tools:latest
+(Windows) --> docker run --rm -v ${PWD}:/code -it  tools:latest
 ```
