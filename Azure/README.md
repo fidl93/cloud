@@ -1,8 +1,6 @@
 https://azure.microsoft.com/es-es/free/students
 
 
-User: user1@franciscodominguezlosada311.onmicrosoft.com
-Pass: Pa55w.rd1234!
 # Azure - IaC
 ## Docker
 Descarga y arranque de la imagen docker
