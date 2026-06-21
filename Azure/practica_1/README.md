@@ -17,16 +17,21 @@ Una vez autenticados, podemos ver que subscripción tenemos activa ejecutando
 az account list -o table
 ```
 
+**Lanzar el cript register_providers.sh**
+```
+bash register_providers.sh
+```
+
 ### Creación de componentes
 1º Vamos a crear el Resource Group (RG)
 ```
-az group create --name <nombre-del-grupo> --location westeurope
+az group create --name <nombre-del-grupo> --location spaincentral
 ```
 
 2º Vamos a crear la Storage account
 
 ```
-az storage account create --name <nombre-de-la-cuenta> --resource-group <nombre-del-grupo-de-recursos> -l westeurope --sku Standard_LRS --kind BlobStorage --access-tier hot
+az storage account create --name <nombre-de-la-cuenta> --resource-group <nombre-del-grupo-de-recursos> -l spaincentral --sku Standard_LRS --kind BlobStorage --access-tier hot
 
 ```
 sku: Tipo de redundancia que queremos
@@ -52,7 +57,7 @@ La plantilla puede estar en local o en remoto.
 ```
 az deployment group create \
   --name testarmtemplate \
-  --resource-group testaz \
+  --resource-group testing_fidl1 \
   --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json" \
   --parameters storageAccountType=Standard_LRS
   ```

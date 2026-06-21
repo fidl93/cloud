@@ -14,13 +14,13 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "testazterraform"
-  location = "westeurope"
+  location = "spaincentral"
 }
 
 resource "azurerm_storage_account" "sa" {
   name                      = "testsaterraform25112024"
   resource_group_name       = resource.azurerm_resource_group.rg.name
-  location                  = "westeurope"
+  location                  = "spaincentral"
   account_tier              = "Standard"
   account_replication_type  = "LRS"
 }
