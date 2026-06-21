@@ -46,3 +46,35 @@ Para destruir lo que hemos construido
 terraform destroy
 ```
 Revisamos las listas en address_spaces y los tags.
+
+
+## Comandos Terraform
+
+### Apply específico
+```
+terraform apply/destroy -target xxxx
+terraform apply -target xxxx -target xxxx
+```
+### State
+```
+terraform state list
+terraform state show xxxxx
+```
+### Import
+```
+terraform import xxxxx AZURE_ID
+```
+**Ejemplo**
+```
+terraform state list
+terraform state rm azurerm_storage_account.sa
+terraform import azurerm_storage_account.sa AZURE_ID #/subsccriptions/...
+terraform state show azurerm_storage_account.sa
+```
+### Graph
+```
+terraform graph
+
+http://webgraphviz.com/
+https://spacelift.io/blog/terraform-graph
+```

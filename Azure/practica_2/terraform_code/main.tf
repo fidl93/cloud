@@ -14,27 +14,27 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "testazterraform"
-  location = "westeurope"
+  location = "spaincentral"
 }
 
 resource "azurerm_storage_account" "sa" {
   name                      = "testsaterraform25112024"
   resource_group_name       = resource.azurerm_resource_group.rg.name
-  location                  = "westeurope"
+  location                  = "spaincentral"
   account_tier              = "Standard"
   account_replication_type  = "LRS"
 }
 
 resource "azurerm_network_security_group" "nsg" {
   name                = "testaz_nsg"
-  location            = "westeurope"
+  location            = "spaincentral"
   resource_group_name = resource.azurerm_resource_group.rg.name
 }
 
 resource "azurerm_virtual_network" "vnet" {
   name                = "testaz_vnet"
   address_space       = ["10.0.0.0/16"]
-  location            = "westeurope"
+  location            = "spaincentral"
   resource_group_name = resource.azurerm_resource_group.rg.name
 
   subnet {
