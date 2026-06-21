@@ -1,6 +1,12 @@
 # Docker
 Imagen docker con todas las herramientas que vamos a necesitar para la práctica
 
+Podemos descargar la imagen de:
+```
+export DOCKER_DEFAULT_PLATFORM=linux/amd64 (MAC Users)
+docker pull eoifidl.azurecr.io/tools:latest
+```
+
 Abrimos la terminal de nuestro equipo y nos situamos en la carpeta docker.
  1º Ejecutamos el build de la imágen
  ```
@@ -13,6 +19,6 @@ cd ..
 ```
 3º Ejecutamos el siguiente comando para acceder al contenedor
 ```
-(MAC/LINUX) --> docker run --rm -v $(pwd):/code -it  tools:latest
+(MAC/LINUX) --> docker run --rm -v "$(pwd):/code"  -it  tools:latest
 (Windows) --> docker run --rm -v ${PWD}:/code -it  tools:latest
 ```
