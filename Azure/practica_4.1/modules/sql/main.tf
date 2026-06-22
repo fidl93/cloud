@@ -6,7 +6,6 @@ resource "azurerm_mysql_flexible_server" "mysql" {
   administrator_password = var.admin_pass
   backup_retention_days  = 7
   sku_name               = "B_Standard_B1ms"
-  zone                   = 1
 }
 
 resource "azurerm_mysql_flexible_database" "db" {

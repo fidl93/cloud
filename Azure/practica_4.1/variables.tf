@@ -7,7 +7,7 @@ variable "label" {
 variable "location" {
     type = string
     description = "Azure location for resources"
-    default = "westeurope"
+    default = "spaincentral"
 }
 
 variable "subnet_prefix" {

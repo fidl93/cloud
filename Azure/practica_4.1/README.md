@@ -8,7 +8,7 @@ En ambos vamos a cargar 2 datasets
 Los leeremos con un Notebook de pyspark dentro de la VM sobre la que vamos a instalar Jupyter Notebook y mostraremos la salida de una operación.
 
 !!IMPORTANTE - Mirar las zonas disponibles de la mysql
-* az mysql flexible-server list-skus --location westeurope
+* az mysql flexible-server list-skus --location spaincentral
 * PORTAL
 
 Tenemos que ejecutar los siguientes export porque los utiliza el provider de azure.
@@ -58,7 +58,7 @@ pip install azure-storage-blob
 ## Pasos previos a la práctica desde el portal
 
 1. Dentro del storage, creamos un container y subimos el fichero files/dataset2.csv
-2. Dentro de la VM, subimos los ficheros de files/* a /home/adminuser/notebooks (scp -o PubkeyAuthentication=no * XXXXX@XXXXXXX:/home//notebooks/)
+2. Dentro de la VM, subimos los ficheros de files/* a /home/adminuser/notebooks (scp -o PubkeyAuthentication=no * XXXXX@XXXXXXX:/home/adminuser/notebooks/)
 
 
 Ejecutamos el siguiente comando para el arranque del JupyterNotebook
@@ -69,9 +69,9 @@ export PYSPARK_SUBMIT_ARGS="--jars /home/adminuser/notebooks/mysql-connector-j-8
 
 jupyter lab --port 8888 --ip 0.0.0.0
 
-#Abrir puerto NSG
+**Abrir puerto NSG**
 ```
 
 Ejecutamos los playbooks:
-* Algorithm --> Rellena la base de datos
-* Database_model --> Lee de dos entidades y hace un join
+* Database_model --> Rellena la base de datos
+* Algorithm --> Lee de dos entidades y hace un join

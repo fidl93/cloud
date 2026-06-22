@@ -29,6 +29,7 @@ module "mysql" {
     source              = "./modules/sql"
     name                = "${var.label}sqldb123543"
     resource_group_name = module.resource_group.name
+    location            = var.location
 }
 
 module "network_security_group" {
